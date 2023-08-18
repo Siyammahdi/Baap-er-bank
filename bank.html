@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +30,11 @@
                 </div>
                 <div class="bg-yellow-400 p-10 rounded-lg">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$ <span id="withdraw-total">00</span> </h2>
                 </div>
                 <div class="bg-violet-400 p-10 rounded-lg">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$1240</h2>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
                 </div>
             </div>
         </section>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="bg-indigo-400 p-10 rounded-lg">
                     <h4 class="text-2xl">Please Withdraw</h4>
-                    <input class="block my-4 px-4 py-1 w-3/5 text-black rounded-md outline-none" type="number" name="" id="withdraw-amount" placeholder="Withdraw Amount">
+                    <input class="block my-4 px-4 py-1 w-3/5 text-black rounded-md outline-none" type="number" name="" id="withdraw-field" placeholder="Withdraw Amount">
                     <button class="bg-indigo-700 px-10 py-2 rounded-md hover:bg-indigo-800" id="withdraw-btn">Withdraw</button>
                 </div>
             </div>
@@ -55,5 +55,6 @@
 
     </main>
     <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
 </body>
 </html>
